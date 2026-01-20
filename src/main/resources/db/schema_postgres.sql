@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS matches (
+    id SERIAL PRIMARY KEY,
+    player1_damage INTEGER NOT NULL,
+    player2_damage INTEGER NOT NULL,
+    result VARCHAR(16) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
